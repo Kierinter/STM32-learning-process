@@ -1,17 +1,8 @@
-/*****************************************************************************************
-* ±¾³ÌÐòÖ»¹©Ñ§Ï°Ê¹ÓÃ,Î´¾­×÷ÕßÐí¿É,²»µÃÓÃÓÚÆäËüÈÎºÎÓÃÍ¾
-* GECM4¿ª·¢°å
-* LEDÇý¶¯´úÂë
-* ¹ãÖÝÔÁÇ¶Í¨ÐÅ¿Æ¼¼¹É·ÝÓÐÏÞ¹«Ë¾ºþÄÏ·Ö¹«Ë¾
-* ´´½¨ÈÕÆÚ:2020-04-20
-* °æ±¾: V1.0
-* Èç·¢ÏÖÇÖÈ¨ÐÐÎª,±¾¹«Ë¾¾ßÓÐÎÊÔðºÍÆðËßÈ¨¡£
-*****************************************************************************************/
 
 #ifndef __GEC_LED_H__
 #define __GEC_LED_H__
 
-/* ¶¨ÒåµÆ×´Ì¬ */
+/* ï¿½ï¿½ï¿½ï¿½ï¿½×´Ì¬ */
 #define LED0_ON			GPIO_WriteBit(GPIOF,GPIO_Pin_9,Bit_RESET)	
 #define LED0_OFF		GPIO_WriteBit(GPIOF,GPIO_Pin_9,Bit_SET)	
 #define LED0_CHANGE		GPIO_ToggleBits(GPIOF,GPIO_Pin_9)	
@@ -20,13 +11,7 @@
 #define LED1_OFF		GPIO_WriteBit(GPIOF,GPIO_Pin_10,Bit_SET)	
 #define LED1_CHANGE		GPIO_ToggleBits(GPIOF,GPIO_Pin_10)	
 
-/*
-	gec_led_init: ÅäÖÃLED¶ÔÓ¦µÄGPIOÒý½Å
-		@void: ÎÞ²ÎÊý
 
-	·µ»ØÖµ:
-		ÎÞ·µ»ØÖµ
-*/
 void gec_led_init(void);
 
 #endif

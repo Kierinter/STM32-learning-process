@@ -3,165 +3,107 @@
 <pre>
 <h1>礦ision Build Log</h1>
 <h2>Tool Versions:</h2>
-IDE-Version: μVision V5.14.0.0
-Copyright (C) 2015 ARM Ltd and ARM Germany GmbH. All rights reserved.
-License Information: 123 ICEY0101@outlook.com, 456, LIC=47GU5-GR6DZ-BSNYX-HZUDP-EXBRT-K6U35
+IDE-Version: μVision V5.38.0.0
+Copyright (C) 2022 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: f kierin, ff, LIC=----
  
 Tool Versions:
-Toolchain:       MDK-ARM Standard  Version: 5.14.0.0
-Toolchain Path:  D:\tools\KEIL5\ARM\ARMCC\Bin
-C Compiler:      Armcc.exe V5.05 update 1 (build 106)
-Assembler:       Armasm.exe V5.05 update 1 (build 106)
-Linker/Locator:  ArmLink.exe V5.05 update 1 (build 106)
-Library Manager: ArmAr.exe V5.05 update 1 (build 106)
-Hex Converter:   FromElf.exe V5.05 update 1 (build 106)
-CPU DLL:         SARMCM3.DLL V5.14.0.0
-Dialog DLL:      DCM.DLL V1.13.1.0
-Target DLL:      Segger\JL2CM3.dll V2.99.13.0
-Dialog DLL:      TCM.DLL V1.14.4.0
+Toolchain:       MDK-Lite  Version: 5.38.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 5 (build 528)
+Assembler:       Armasm.exe V5.06 update 5 (build 528)
+Linker/Locator:  ArmLink.exe V5.06 update 5 (build 528)
+Library Manager: ArmAr.exe V5.06 update 5 (build 528)
+Hex Converter:   FromElf.exe V5.06 update 5 (build 528)
+CPU DLL:         SARMCM3.DLL V5.38.0.0
+Dialog DLL:      DCM.DLL V1.17.5.0
+Target DLL:      Segger\JL2CM3.dll V2.99.42.0
+Dialog DLL:      TCM.DLL V1.56.4.0
  
 <h2>Project:</h2>
-C:\Users\ICEY0\Desktop\湘潭大学21通信毕业实习\STM32F407_CODE\USER\project_led\led.uvprojx
-Project File Date:  07/07/2024
+d:\keliProject\experience\STM32-learning-process\led\led.uvprojx
+Project File Date:  07/08/2024
 
 <h2>Output:</h2>
+*** Using Compiler 'V5.06 update 5 (build 528)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
 Build target 'Target 1'
-assembling startup_stm32f40xx.s...
-compiling misc.c...
-compiling stm32f4xx_adc.c...
-compiling stm32f4xx_can.c...
-compiling stm32f4xx_cec.c...
-compiling stm32f4xx_crc.c...
-compiling stm32f4xx_cryp.c...
-compiling stm32f4xx_cryp_aes.c...
-compiling stm32f4xx_cryp_des.c...
-compiling stm32f4xx_cryp_tdes.c...
-compiling stm32f4xx_dac.c...
-compiling stm32f4xx_dbgmcu.c...
-compiling stm32f4xx_dcmi.c...
-compiling stm32f4xx_dfsdm.c...
-compiling stm32f4xx_dma.c...
-compiling stm32f4xx_dma2d.c...
-compiling stm32f4xx_dsi.c...
-compiling stm32f4xx_exti.c...
-compiling stm32f4xx_flash.c...
-compiling stm32f4xx_flash_ramfunc.c...
-compiling stm32f4xx_fmpi2c.c...
-compiling stm32f4xx_fsmc.c...
-compiling stm32f4xx_gpio.c...
-compiling stm32f4xx_hash.c...
-compiling stm32f4xx_hash_md5.c...
-compiling stm32f4xx_hash_sha1.c...
-compiling stm32f4xx_i2c.c...
-compiling stm32f4xx_iwdg.c...
-compiling stm32f4xx_lptim.c...
-compiling stm32f4xx_ltdc.c...
-compiling stm32f4xx_pwr.c...
-compiling stm32f4xx_qspi.c...
-compiling stm32f4xx_rcc.c...
-compiling stm32f4xx_rng.c...
-compiling stm32f4xx_rtc.c...
-compiling stm32f4xx_sai.c...
-compiling stm32f4xx_sdio.c...
-compiling stm32f4xx_spdifrx.c...
-compiling stm32f4xx_spi.c...
-compiling stm32f4xx_syscfg.c...
-compiling stm32f4xx_tim.c...
-compiling stm32f4xx_usart.c...
-compiling stm32f4xx_wwdg.c...
-compiling main.c...
-src\gec_led.h(32): warning:  #1-D: last line of file ends without a newline
-  #endif
-src\gec_exti.h(9): warning:  #1-D: last line of file ends without a newline
-  #endif
-src\main.c(88): warning:  #223-D: function "at24c02_gpio_init" declared implicitly
-        at24c02_gpio_init();
-src\main.c(90): warning:  #223-D: function "printf" declared implicitly
-        printf("DEBUG:-%s-%s-%d\n",__FILE__,__FUNCTION__,__LINE__);
-src\main.c(91): warning:  #223-D: function "read_byte_to_AT24C02" declared implicitly
-        read_byte_to_AT24C02(0x10,buf,5);
-src\main.c(96): warning:  #223-D: function "write_a_byte_to_AT24C02" declared implicitly
-                write_a_byte_to_AT24C02(addr++,str[i]);
-src\main.c(104): warning:  #223-D: function "w25q128_read_id" declared implicitly
-        w25q128_id = w25q128_read_id();
-src\main.c(108): warning:  #223-D: function "read_bytes_from_w25q128" declared implicitly
-        read_bytes_from_w25q128(0x784ffe,recv,20);
-src\main.c(114): warning:  #223-D: function "write_bytes_from_w25q128" declared implicitly
-        write_bytes_from_w25q128(0x784ffe,"12345678900987654321",20);
-src\main.c(128): warning:  #223-D: function "strlen" declared implicitly
-                        debug_send_str(recv_buf,strlen(recv_buf));              //注意,使用标准C库函数时,需要勾选 options中 --> Target --> 勾选 Use MircoLIB
-src\main.c(130): warning:  #223-D: function "memset" declared implicitly
-                        memset(recv_buf,0,512);
-src\main.c(140): warning:  #177-D: function "Delay" was declared but never referenced
-  void Delay(__IO uint32_t nTime)
-src\main.c: 12 warnings, 0 errors
-compiling stm32f4xx_it.c...
-compiling system_stm32f4xx.c...
-compiling gec_led.c...
-compiling gec_key.c...
-compiling gec_exti.c...
-src\gec_led.h(32): warning:  #1-D: last line of file ends without a newline
-  #endif
-src\gec_exti.c(84): warning:  #1-D: last line of file ends without a newline
-  }
-src\gec_exti.c: 2 warnings, 0 errors
-compiling gec_delay.c...
-compiling gec_timer.c...
-src\gec_led.h(32): warning:  #1-D: last line of file ends without a newline
-  #endif
-src\gec_timer.c: 1 warning, 0 errors
-compiling gec_usart.c...
-src\gec_usart.c(145): warning:  #940-D: missing return statement at end of non-void function "fputc"
-  }
-src\gec_usart.c: 1 warning, 0 errors
-compiling gec_w25q128.c...
-src\gec_w25q128.c(84): warning:  #940-D: missing return statement at end of non-void function "spi_send_byte"
-  }
-src\gec_w25q128.c(66): warning:  #550-D: variable "recv" was set but never used
-        char recv = 0;
-src\gec_w25q128.c(143): warning:  #223-D: function "gec_delay_ms" declared implicitly
-                gec_delay_ms(5);
-src\gec_w25q128.c(200): warning:  #186-D: pointless comparison of unsigned integer with zero
-        if(addr < 0  || addr>0xffffff)  //地址合法性
-src\gec_w25q128.c(202): warning:  #223-D: function "printf" declared implicitly
-                printf("指定的地址不合法\n");
-src\gec_w25q128.c(278): warning:  #186-D: pointless comparison of unsigned integer with zero
-        if(addr < 0  || addr>0xffffff)  //地址合法性
-src\gec_w25q128.c(280): warning:  #223-D: function "printf" declared implicitly
-                printf("指定的地址不合法\n");
-src\gec_w25q128.c(281): warning:  #120-D: return value type does not match the function type
-                return -1;
-src\gec_w25q128.c(309): warning:  #120-D: return value type does not match the function type
-        return i; //实际写入字节数
-src\gec_w25q128.c(336): warning:  #223-D: function "printf" declared implicitly
-                printf("指定的地址不合法\n");
-src\gec_w25q128.c(362): warning:  #940-D: missing return statement at end of non-void function "write_bytes_from_w25q128"
-  }
-src\gec_w25q128.c(333): warning:  #177-D: variable "write_byte" was declared but never referenced
-        int write_byte = 0;             //可以写入的字节数
-src\gec_w25q128.c: 12 warnings, 0 errors
-compiling gec_at24c02.c...
-src\gec_at24c02.c(49): warning:  #223-D: function "gec_delay_us" declared implicitly
-                gec_delay_us(1);        //每隔1us判断一次事件,这个函数只会等待 timeout us
-src\gec_at24c02.c(109): warning:  #223-D: function "printf" declared implicitly
-                printf("AT24C02 is BUSY\n");
-src\gec_at24c02.c(113): warning:  #223-D: function "printf" declared implicitly
-        printf("DEBUG:-%s-%s-%d\n",__FILE__,__FUNCTION__,__LINE__);
-src\gec_at24c02.c(169): warning:  #940-D: missing return statement at end of non-void function "write_byte_to_AT24C02"
-  }
-src\gec_at24c02.c(206): warning:  #223-D: function "printf" declared implicitly
-        printf("DEBUG:-%s-%s-%d\n",__FILE__,__FUNCTION__,__LINE__);
-src\gec_at24c02.c: 5 warnings, 0 errors
-linking...
-Program Size: Code=6640 RO-data=476 RW-data=56 ZI-data=5632  
-FromELF: creating hex file...
-".\Objects\led.axf" - 0 Error(s), 33 Warning(s).
+compiling stm32f4xx_fmc.c...
+FWLIB\src\stm32f4xx_fmc.c(144): error:  #20: identifier "FMC_Bank1" is undefined
+      FMC_Bank1->BTCR[FMC_Bank] = 0x000030DB;    
+FWLIB\src\stm32f4xx_fmc.c(149): error:  #20: identifier "FMC_Bank1" is undefined
+      FMC_Bank1->BTCR[FMC_Bank] = 0x000030D2; 
+FWLIB\src\stm32f4xx_fmc.c(151): error:  #20: identifier "FMC_Bank1" is undefined
+    FMC_Bank1->BTCR[FMC_Bank + 1] = 0x0FFFFFFF;
+FWLIB\src\stm32f4xx_fmc.c(152): error:  #20: identifier "FMC_Bank1E" is undefined
+    FMC_Bank1E->BWTR[FMC_Bank] = 0x0FFFFFFF;  
+FWLIB\src\stm32f4xx_fmc.c(191): error:  #20: identifier "FMC_Bank1" is undefined
+    tmpbcr = FMC_Bank1->BTCR[FMC_NORSRAMInitStruct->FMC_Bank];
+FWLIB\src\stm32f4xx_fmc.c(195): error:  #20: identifier "FMC_BCR1_MBKEN" is undefined
+    tmpbcr &= ((uint32_t)~(FMC_BCR1_MBKEN   | FMC_BCR1_MUXEN    | FMC_BCR1_MTYP     | \
+FWLIB\src\stm32f4xx_fmc.c(195): error:  #20: identifier "FMC_BCR1_MUXEN" is undefined
+    tmpbcr &= ((uint32_t)~(FMC_BCR1_MBKEN   | FMC_BCR1_MUXEN    | FMC_BCR1_MTYP     | \
+FWLIB\src\stm32f4xx_fmc.c(195): error:  #20: identifier "FMC_BCR1_MTYP" is undefined
+    tmpbcr &= ((uint32_t)~(FMC_BCR1_MBKEN   | FMC_BCR1_MUXEN    | FMC_BCR1_MTYP     | \
+FWLIB\src\stm32f4xx_fmc.c(196): error:  #20: identifier "FMC_BCR1_MWID" is undefined
+                           FMC_BCR1_MWID     | FMC_BCR1_FACCEN   | FMC_BCR1_BURSTEN  | \
+FWLIB\src\stm32f4xx_fmc.c(196): error:  #20: identifier "FMC_BCR1_FACCEN" is undefined
+                           FMC_BCR1_MWID     | FMC_BCR1_FACCEN   | FMC_BCR1_BURSTEN  | \
+FWLIB\src\stm32f4xx_fmc.c(196): error:  #20: identifier "FMC_BCR1_BURSTEN" is undefined
+                           FMC_BCR1_MWID     | FMC_BCR1_FACCEN   | FMC_BCR1_BURSTEN  | \
+FWLIB\src\stm32f4xx_fmc.c(197): error:  #20: identifier "FMC_BCR1_WAITPOL" is undefined
+                           FMC_BCR1_WAITPOL  | FMC_BCR1_WRAPMOD  | FMC_BCR1_WAITCFG  | \
+FWLIB\src\stm32f4xx_fmc.c(197): error:  #20: identifier "FMC_BCR1_WRAPMOD" is undefined
+                           FMC_BCR1_WAITPOL  | FMC_BCR1_WRAPMOD  | FMC_BCR1_WAITCFG  | \
+FWLIB\src\stm32f4xx_fmc.c(197): error:  #20: identifier "FMC_BCR1_WAITCFG" is undefined
+                           FMC_BCR1_WAITPOL  | FMC_BCR1_WRAPMOD  | FMC_BCR1_WAITCFG  | \
+FWLIB\src\stm32f4xx_fmc.c(198): error:  #20: identifier "FMC_BCR1_WREN" is undefined
+                           FMC_BCR1_WREN     | FMC_BCR1_WAITEN   | FMC_BCR1_EXTMOD   | \
+FWLIB\src\stm32f4xx_fmc.c(198): error:  #20: identifier "FMC_BCR1_WAITEN" is undefined
+                           FMC_BCR1_WREN     | FMC_BCR1_WAITEN   | FMC_BCR1_EXTMOD   | \
+FWLIB\src\stm32f4xx_fmc.c(198): error:  #20: identifier "FMC_BCR1_EXTMOD" is undefined
+                           FMC_BCR1_WREN     | FMC_BCR1_WAITEN   | FMC_BCR1_EXTMOD   | \
+FWLIB\src\stm32f4xx_fmc.c(199): error:  #20: identifier "FMC_BCR1_ASYNCWAIT" is undefined
+                           FMC_BCR1_ASYNCWAIT| FMC_BCR1_CBURSTRW | FMC_BCR1_CCLKEN));
+FWLIB\src\stm32f4xx_fmc.c(199): error:  #20: identifier "FMC_BCR1_CBURSTRW" is undefined
+                           FMC_BCR1_ASYNCWAIT| FMC_BCR1_CBURSTRW | FMC_BCR1_CCLKEN));
+FWLIB\src\stm32f4xx_fmc.c(199): error:  #20: identifier "FMC_BCR1_CCLKEN" is undefined
+                           FMC_BCR1_ASYNCWAIT| FMC_BCR1_CBURSTRW | FMC_BCR1_CCLKEN));
+FWLIB\src\stm32f4xx_fmc.c(253): error:  #20: identifier "FMC_Bank1E" is undefined
+      tmpbwr = FMC_Bank1E->BWTR[FMC_NORSRAMInitStruct->FMC_Bank];
+FWLIB\src\stm32f4xx_fmc.c(256): error:  #20: identifier "FMC_BWTR1_ADDSET" is undefined
+      tmpbwr &= ((uint32_t)~(FMC_BWTR1_ADDSET  | FMC_BWTR1_ADDHLD | FMC_BWTR1_DATAST | \
+FWLIB\src\stm32f4xx_fmc.c(256): error:  #20: identifier "FMC_BWTR1_ADDHLD" is undefined
+      tmpbwr &= ((uint32_t)~(FMC_BWTR1_ADDSET  | FMC_BWTR1_ADDHLD | FMC_BWTR1_DATAST | \
+FWLIB\src\stm32f4xx_fmc.c(256): error:  #20: identifier "FMC_BWTR1_DATAST" is undefined
+      tmpbwr &= ((uint32_t)~(FMC_BWTR1_ADDSET  | FMC_BWTR1_ADDHLD | FMC_BWTR1_DATAST | \
+FWLIB\src\stm32f4xx_fmc.c(257): error:  #20: identifier "FMC_BWTR1_BUSTURN" is undefined
+                             FMC_BWTR1_BUSTURN | FMC_BWTR1_ACCMOD));
+FWLIB\src\stm32f4xx_fmc.c(257): error:  #20: identifier "FMC_BWTR1_ACCMOD" is undefined
+                             FMC_BWTR1_BUSTURN | FMC_BWTR1_ACCMOD));
+FWLIB\src\stm32f4xx_fmc.c(269): error:  #20: identifier "FMC_Bank1E" is undefined
+      FMC_Bank1E->BWTR[FMC_NORSRAMInitStruct->FMC_Bank] = 0x0FFFFFFF;
+FWLIB\src\stm32f4xx_fmc.c(321): error:  #20: identifier "FMC_Bank1" is undefined
+      FMC_Bank1->BTCR[FMC_Bank] |= BCR_MBKEN_SET;
+FWLIB\src\stm32f4xx_fmc.c(326): error:  #20: identifier "FMC_Bank1" is undefined
+      FMC_Bank1->BTCR[FMC_Bank] &= BCR_MBKEN_RESET;
+FWLIB\src\stm32f4xx_fmc.c(394): error:  #20: identifier "FMC_Bank2" is undefined
+      FMC_Bank2->PCR2 = 0x00000018;
+FWLIB\src\stm32f4xx_fmc.c: 0 warnings, 30 errors
+".\Objects\led.axf" - 30 Error(s), 0 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: Keil
+                https://www.keil.com/pack/Keil.STM32F4xx_DFP.2.17.1.pack
+                Keil.STM32F4xx_DFP.2.17.1
+                STMicroelectronics STM32F4 Series Device Support, Drivers and Examples
 
 <h2>Collection of Component include folders:</h2>
-  C:\Users\ICEY0\Desktop\湘潭大学21通信毕业实习\STM32F407_CODE\USER\project_led\RTE
-  D:\tools\KEIL5\ARM\PACK\Keil\STM32F4xx_DFP\2.13.0
+  C:/Keil_v5/ARM/PACK/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include
 
 <h2>Collection of Component Files used:</h2>
+Target not created.
+Build Time Elapsed:  00:00:00
 </pre>
 </body>
 </html>
