@@ -6,6 +6,7 @@
 *.ko
 *.obj
 *.elf
+*.hex
 
 # Linker output
 *.ilk
@@ -53,6 +54,10 @@ dkms.conf
 
 led/.vscode
 led/.vscode/*
+led_flow/.vscode
+led_flow/.vscode/*
+
+
 
 
 
