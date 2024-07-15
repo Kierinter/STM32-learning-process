@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "oled.h": "c",
+        "usart.h": "c",
+        "gy39.h": "c",
+        "u8g2.h": "c"
+    }
+}
