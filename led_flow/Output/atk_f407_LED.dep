@@ -1,66 +1,0 @@
-Dependencies for Project 'atk_f407', Target 'LED': (DO NOT MODIFY !)
-CompilerVersion: 5060528::V5.06 update 5 (build 528)::ARMCC
-F (..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Source\Templates\arm\startup_stm32f407xx.s)(0x665054DE)(--cpu Cortex-M4.fp.sp --pd "__EVAL SETA 1" -g --apcs=interwork -IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include--pd "__UVISION_VERSION SETA 538" --pd "STM32F407xx SETA 1"--list ..\..\output\startup_stm32f407xx.lst --xref -o ..\..\output\startup_stm32f407xx.o --depend ..\..\output\startup_stm32f407xx.d)
-F (..\..\User\main.c)(0x668B3552)(--c99 -c --cpu Cortex-M4.fp.sp -D__EVAL -g -O0 --apcs=interwork --split_sections -I ..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include -I ..\..\Libraries\CMSIS\Include -I ..\..\SYSTEM -I ..\..\User -I ..\..\HARDWARE-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="538" -DSTM32F407xx -DSTM32F407xx-o ..\..\output\main.o --omf_browse ..\..\output\main.crf --depend ..\..\output\main.d)
-I (..\..\SYSTEM\./sys/sys.h)(0x668B3552)
-I (..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x665054DE)
-I (..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include\stm32f407xx.h)(0x668B38A2)
-I (..\..\Libraries\CMSIS\Include\core_cm4.h)(0x665054DE)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x588B8344)
-I (..\..\Libraries\CMSIS\Include\cmsis_version.h)(0x665054DE)
-I (..\..\Libraries\CMSIS\Include\cmsis_compiler.h)(0x665054DE)
-I (..\..\Libraries\CMSIS\Include\cmsis_armcc.h)(0x665054DE)
-I (..\..\Libraries\CMSIS\Include\mpu_armv7.h)(0x665054DE)
-I (..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x665054DE)
-I (..\..\SYSTEM\./usart/usart.h)(0x668B3552)
-I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x588B8344)
-I (..\..\SYSTEM\./delay/delay.h)(0x668B3552)
-I (..\..\HARDWARE\./LED/led.h)(0x668B55AE)
-F (..\..\HARDWARE\LED\led.c)(0x668B55AE)(--c99 -c --cpu Cortex-M4.fp.sp -D__EVAL -g -O0 --apcs=interwork --split_sections -I ..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include -I ..\..\Libraries\CMSIS\Include -I ..\..\SYSTEM -I ..\..\User -I ..\..\HARDWARE-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="538" -DSTM32F407xx -DSTM32F407xx-o ..\..\output\led.o --omf_browse ..\..\output\led.crf --depend ..\..\output\led.d)
-I (..\..\HARDWARE\./LED/led.h)(0x668B55AE)
-I (..\..\SYSTEM\./sys/sys.h)(0x668B3552)
-I (..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x665054DE)
-I (..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include\stm32f407xx.h)(0x668B38A2)
-I (..\..\Libraries\CMSIS\Include\core_cm4.h)(0x665054DE)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x588B8344)
-I (..\..\Libraries\CMSIS\Include\cmsis_version.h)(0x665054DE)
-I (..\..\Libraries\CMSIS\Include\cmsis_compiler.h)(0x665054DE)
-I (..\..\Libraries\CMSIS\Include\cmsis_armcc.h)(0x665054DE)
-I (..\..\Libraries\CMSIS\Include\mpu_armv7.h)(0x665054DE)
-I (..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x665054DE)
-F (..\..\SYSTEM\delay\delay.c)(0x668B3552)(--c99 -c --cpu Cortex-M4.fp.sp -D__EVAL -g -O0 --apcs=interwork --split_sections -I ..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include -I ..\..\Libraries\CMSIS\Include -I ..\..\SYSTEM -I ..\..\User -I ..\..\HARDWARE-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="538" -DSTM32F407xx -DSTM32F407xx-o ..\..\output\delay.o --omf_browse ..\..\output\delay.crf --depend ..\..\output\delay.d)
-I (..\..\SYSTEM\./sys/sys.h)(0x668B3552)
-I (..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x665054DE)
-I (..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include\stm32f407xx.h)(0x668B38A2)
-I (..\..\Libraries\CMSIS\Include\core_cm4.h)(0x665054DE)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x588B8344)
-I (..\..\Libraries\CMSIS\Include\cmsis_version.h)(0x665054DE)
-I (..\..\Libraries\CMSIS\Include\cmsis_compiler.h)(0x665054DE)
-I (..\..\Libraries\CMSIS\Include\cmsis_armcc.h)(0x665054DE)
-I (..\..\Libraries\CMSIS\Include\mpu_armv7.h)(0x665054DE)
-I (..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x665054DE)
-I (..\..\SYSTEM\./delay/delay.h)(0x668B3552)
-F (..\..\SYSTEM\sys\sys.c)(0x668B3552)(--c99 -c --cpu Cortex-M4.fp.sp -D__EVAL -g -O0 --apcs=interwork --split_sections -I ..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include -I ..\..\Libraries\CMSIS\Include -I ..\..\SYSTEM -I ..\..\User -I ..\..\HARDWARE-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="538" -DSTM32F407xx -DSTM32F407xx-o ..\..\output\sys.o --omf_browse ..\..\output\sys.crf --depend ..\..\output\sys.d)
-I (..\..\SYSTEM\./sys/sys.h)(0x668B3552)
-I (..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x665054DE)
-I (..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include\stm32f407xx.h)(0x668B38A2)
-I (..\..\Libraries\CMSIS\Include\core_cm4.h)(0x665054DE)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x588B8344)
-I (..\..\Libraries\CMSIS\Include\cmsis_version.h)(0x665054DE)
-I (..\..\Libraries\CMSIS\Include\cmsis_compiler.h)(0x665054DE)
-I (..\..\Libraries\CMSIS\Include\cmsis_armcc.h)(0x665054DE)
-I (..\..\Libraries\CMSIS\Include\mpu_armv7.h)(0x665054DE)
-I (..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x665054DE)
-F (..\..\SYSTEM\usart\usart.c)(0x668B3552)(--c99 -c --cpu Cortex-M4.fp.sp -D__EVAL -g -O0 --apcs=interwork --split_sections -I ..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include -I ..\..\Libraries\CMSIS\Include -I ..\..\SYSTEM -I ..\..\User -I ..\..\HARDWARE-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="538" -DSTM32F407xx -DSTM32F407xx-o ..\..\output\usart.o --omf_browse ..\..\output\usart.crf --depend ..\..\output\usart.d)
-I (..\..\SYSTEM\./sys/sys.h)(0x668B3552)
-I (..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x665054DE)
-I (..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include\stm32f407xx.h)(0x668B38A2)
-I (..\..\Libraries\CMSIS\Include\core_cm4.h)(0x665054DE)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x588B8344)
-I (..\..\Libraries\CMSIS\Include\cmsis_version.h)(0x665054DE)
-I (..\..\Libraries\CMSIS\Include\cmsis_compiler.h)(0x665054DE)
-I (..\..\Libraries\CMSIS\Include\cmsis_armcc.h)(0x665054DE)
-I (..\..\Libraries\CMSIS\Include\mpu_armv7.h)(0x665054DE)
-I (..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x665054DE)
-I (..\..\SYSTEM\./usart/usart.h)(0x668B3552)
-I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x588B8344)
