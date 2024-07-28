@@ -45,22 +45,18 @@ void get_gy39_data(unsigned int data[])
 		// 先从recvbuf中获取数据
 		unsigned int lightData = recvbuf[4] << 24 | recvbuf[5] << 16 | recvbuf[6] << 8 | recvbuf[7];
 		lightData = lightData / 100;
-		printf("Raw light intensity is %d\r\n", &lightData);
 
 		// 当光照强度小于1000时，更新databuf和data[0]为新值
 		if (lightData < 1000)
 		{
 			databuf = lightData;
 			data[0] = lightData;
-			printf("Updated light intensity is %d\r\n", data[0]);
 		}
 		else
 		{
 			// 当光照强度大于等于1000时，保持data[0]为databuf的值，不更新databuf
 			data[0] = databuf;
-			printf("Light intensity exceeds threshold, using databuf value: %d\r\n", data[0]);
 		}
-		printf("Final databuf value is %d\r\n", databuf);
 	}
 
 	else if (gy39_mode == OTHER)

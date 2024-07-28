@@ -11,24 +11,37 @@
 
 int main(void)
 {
+    unsigned int gy39_data[5] = {0};
+    get_gy39_data(gy39_data);
+    int key = 0;
 
     LED_Init();
     BEEP_Init();
     KEY_Init();
+    exit_init();
     gy39_Init();
-    USART1_Init(9600);
+    usart_init(84, 9600);
     delay_ms(10);
+    LED0(0);
+    LED1(1);
     while(1)
     {
-        if(KEY_Scan(0) == 1)
+        key = key_scan(0);
+        if(key == WKUP_PRES)
         {
-            BEEP = 1;
-            delay_ms(100);
-            BEEP = 0;
+            LED0_TOGGLE();
+		    printf("Raw light intensity is %d\r\n", gy39_data[0]);
+            key = 0;
+
         }
-        else
+        delay_ms(50);
+        if(key == KEY1_PRES)
         {
-            BEEP = 0;
+            LED1_TOGGLE();
+            BEEP(1);
+            delay_ms(10);
+		    printf("Temperature is %d, Humidity is %d, Air Pressure is %d, Altitude is %d\r\n", gy39_data[1], gy39_data[3], gy39_data[2], gy39_data[4]);
+            key = 0;
         }
     }
     return 0;
