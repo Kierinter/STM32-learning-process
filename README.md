@@ -9,4 +9,4 @@
 3. 实现中断按键控制LED和蜂蜜器
 4. 实现串口通信，从传感器处获取数据
 5. 实现[U8g2图像库](https://github.com/olikraus/u8g2.git)的移植，点亮OLED
-6. 整合实现系统
+6. 整合[实现系统](/gy39/readme.md)
