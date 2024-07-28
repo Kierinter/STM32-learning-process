@@ -2,6 +2,7 @@
 #include "./usart/usart.h"
 #include "stdio.h"
 #include "string.h"
+
 unsigned char GY39_cmd1[] = {0xA5, 0x81, 0x26};
 unsigned char GY39_cmd2[] = {0xA5, 0x82, 0x27};
 unsigned char gy39_mode = 0;

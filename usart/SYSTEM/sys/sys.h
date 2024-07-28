@@ -1,99 +1,77 @@
-
-
 #ifndef __SYS_H
 #define __SYS_H
 
 #include "stm32f4xx.h"
 
-
 /**
- * SYS_SUPPORT_OSÓÃÓÚ¶¨ÒåÏµÍ³ÎÄ¼þ¼ÐÊÇ·ñÖ§³ÖOS
- * 0,²»Ö§³ÖOS
- * 1,Ö§³ÖOS
+ * SYS_SUPPORT_OSï¿½ï¿½ï¿½Ú¶ï¿½ï¿½ï¿½ÏµÍ³ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½Ç·ï¿½Ö§ï¿½ï¿½OS
+ * 0,ï¿½ï¿½Ö§ï¿½ï¿½OS
+ * 1,Ö§ï¿½ï¿½OS
  */
-#define SYS_SUPPORT_OS              0
+#define SYS_SUPPORT_OS 0
 
+/* sys_nvic_ex_config×¨ï¿½Ãºê¶¨ï¿½ï¿½ */
+#define SYS_GPIO_FTIR 1 /* ï¿½Â½ï¿½ï¿½Ø´ï¿½ï¿½ï¿½ */
+#define SYS_GPIO_RTIR 2 /* ï¿½ï¿½ï¿½ï¿½ï¿½Ø´ï¿½ï¿½ï¿½ */
+#define SYS_GPIO_BTIR 3 /* ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ø´ï¿½ï¿½ï¿½ */
 
-/* sys_nvic_ex_config×¨ÓÃºê¶¨Òå */
-#define SYS_GPIO_FTIR               1       /* ÏÂ½µÑØ´¥·¢ */
-#define SYS_GPIO_RTIR               2       /* ÉÏÉýÑØ´¥·¢ */
-#define SYS_GPIO_BTIR               3       /* ÈÎÒâ±ßÑØ´¥·¢ */
+/* GPIOï¿½ï¿½ï¿½ï¿½×¨ï¿½Ãºê¶¨ï¿½ï¿½ */
+#define SYS_GPIO_MODE_IN 0  /* ï¿½ï¿½Í¨ï¿½ï¿½ï¿½ï¿½Ä£Ê½ */
+#define SYS_GPIO_MODE_OUT 1 /* ï¿½ï¿½Í¨ï¿½ï¿½ï¿½Ä£Ê½ */
+#define SYS_GPIO_MODE_AF 2  /* AFï¿½ï¿½ï¿½ï¿½Ä£Ê½ */
+#define SYS_GPIO_MODE_AIN 3 /* Ä£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä£Ê½ */
 
-/* GPIOÉèÖÃ×¨ÓÃºê¶¨Òå */
-#define SYS_GPIO_MODE_IN            0       /* ÆÕÍ¨ÊäÈëÄ£Ê½ */
-#define SYS_GPIO_MODE_OUT           1       /* ÆÕÍ¨Êä³öÄ£Ê½ */
-#define SYS_GPIO_MODE_AF            2       /* AF¹¦ÄÜÄ£Ê½ */
-#define SYS_GPIO_MODE_AIN           3       /* Ä£ÄâÊäÈëÄ£Ê½ */
+#define SYS_GPIO_SPEED_LOW 0  /* GPIOï¿½Ù¶ï¿½(ï¿½ï¿½ï¿½ï¿½,2M) */
+#define SYS_GPIO_SPEED_MID 1  /* GPIOï¿½Ù¶ï¿½(ï¿½ï¿½ï¿½ï¿½,25M) */
+#define SYS_GPIO_SPEED_FAST 2 /* GPIOï¿½Ù¶ï¿½(ï¿½ï¿½ï¿½ï¿½,50M) */
+#define SYS_GPIO_SPEED_HIGH 3 /* GPIOï¿½Ù¶ï¿½(ï¿½ï¿½ï¿½ï¿½,100M) */
 
-#define SYS_GPIO_SPEED_LOW          0       /* GPIOËÙ¶È(µÍËÙ,2M) */
-#define SYS_GPIO_SPEED_MID          1       /* GPIOËÙ¶È(ÖÐËÙ,25M) */
-#define SYS_GPIO_SPEED_FAST         2       /* GPIOËÙ¶È(¿ìËÙ,50M) */
-#define SYS_GPIO_SPEED_HIGH         3       /* GPIOËÙ¶È(¸ßËÙ,100M) */
+#define SYS_GPIO_PUPD_NONE 0 /* ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ */
+#define SYS_GPIO_PUPD_PU 1   /* ï¿½ï¿½ï¿½ï¿½ */
+#define SYS_GPIO_PUPD_PD 2   /* ï¿½ï¿½ï¿½ï¿½ */
+#define SYS_GPIO_PUPD_RES 3  /* ï¿½ï¿½ï¿½ï¿½ */
 
-#define SYS_GPIO_PUPD_NONE          0       /* ²»´øÉÏÏÂÀ­ */
-#define SYS_GPIO_PUPD_PU            1       /* ÉÏÀ­ */
-#define SYS_GPIO_PUPD_PD            2       /* ÏÂÀ­ */
-#define SYS_GPIO_PUPD_RES           3       /* ±£Áô */
+#define SYS_GPIO_OTYPE_PP 0 /* ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ */
+#define SYS_GPIO_OTYPE_OD 1 /* ï¿½ï¿½Â©ï¿½ï¿½ï¿½ */
 
-#define SYS_GPIO_OTYPE_PP           0       /* ÍÆÍìÊä³ö */
-#define SYS_GPIO_OTYPE_OD           1       /* ¿ªÂ©Êä³ö */
+/* GPIOï¿½ï¿½ï¿½ï¿½Î»ï¿½Ãºê¶¨ï¿½ï¿½  */
+#define SYS_GPIO_PIN0 1 << 0
+#define SYS_GPIO_PIN1 1 << 1
+#define SYS_GPIO_PIN2 1 << 2
+#define SYS_GPIO_PIN3 1 << 3
+#define SYS_GPIO_PIN4 1 << 4
+#define SYS_GPIO_PIN5 1 << 5
+#define SYS_GPIO_PIN6 1 << 6
+#define SYS_GPIO_PIN7 1 << 7
+#define SYS_GPIO_PIN8 1 << 8
+#define SYS_GPIO_PIN9 1 << 9
+#define SYS_GPIO_PIN10 1 << 10
+#define SYS_GPIO_PIN11 1 << 11
+#define SYS_GPIO_PIN12 1 << 12
+#define SYS_GPIO_PIN13 1 << 13
+#define SYS_GPIO_PIN14 1 << 14
+#define SYS_GPIO_PIN15 1 << 15
 
-/* GPIOÒý½ÅÎ»ÖÃºê¶¨Òå  */
-#define SYS_GPIO_PIN0               1<<0
-#define SYS_GPIO_PIN1               1<<1
-#define SYS_GPIO_PIN2               1<<2
-#define SYS_GPIO_PIN3               1<<3
-#define SYS_GPIO_PIN4               1<<4
-#define SYS_GPIO_PIN5               1<<5
-#define SYS_GPIO_PIN6               1<<6
-#define SYS_GPIO_PIN7               1<<7
-#define SYS_GPIO_PIN8               1<<8
-#define SYS_GPIO_PIN9               1<<9
-#define SYS_GPIO_PIN10              1<<10
-#define SYS_GPIO_PIN11              1<<11
-#define SYS_GPIO_PIN12              1<<12
-#define SYS_GPIO_PIN13              1<<13
-#define SYS_GPIO_PIN14              1<<14
-#define SYS_GPIO_PIN15              1<<15
+static void sys_nvic_priority_group_config(uint8_t group);
 
+void sys_nvic_set_vector_table(uint32_t baseaddr, uint32_t offset);
+void sys_nvic_init(uint8_t pprio, uint8_t sprio, uint8_t ch, uint8_t group);
+void sys_nvic_ex_config(GPIO_TypeDef *p_gpiox, uint16_t pinx, uint8_t tmode);
+void sys_gpio_af_set(GPIO_TypeDef *gpiox, uint16_t pinx, uint8_t afx);
+void sys_gpio_set(GPIO_TypeDef *p_gpiox, uint16_t pinx, uint32_t mode, uint32_t otype, uint32_t ospeed, uint32_t pupd);
 
-/*º¯ÊýÉêÃ÷*******************************************************************************************/
-/* ¾²Ì¬º¯Êý(½öÔÚsys.cÀïÃæÓÃµ½) */
-static void sys_nvic_priority_group_config(uint8_t group);                      /* ÉèÖÃNVIC·Ö×é */
+void sys_gpio_pin_set(GPIO_TypeDef *p_gpiox, uint16_t pinx, uint8_t status);
+uint8_t sys_gpio_pin_get(GPIO_TypeDef *p_gpiox, uint16_t pinx);
+void sys_standby(void);
+void sys_soft_reset(void);
 
+uint8_t sys_clock_set(uint32_t plln, uint32_t pllm, uint32_t pllp, uint32_t pllq);
+void sys_stm32_clock_init(uint32_t plln, uint32_t pllm, uint32_t pllp, uint32_t pllq);
+void sys_qspi_enable_memmapmode(uint8_t ftype);
 
-/* ÆÕÍ¨º¯Êý */
-void sys_nvic_set_vector_table(uint32_t baseaddr, uint32_t offset);             /* ÉèÖÃÖÐ¶ÏÆ«ÒÆÁ¿ */
-void sys_nvic_init(uint8_t pprio, uint8_t sprio, uint8_t ch, uint8_t group);    /* ÉèÖÃNVIC */
-void sys_nvic_ex_config(GPIO_TypeDef *p_gpiox, uint16_t pinx, uint8_t tmode);   /* Íâ²¿ÖÐ¶ÏÅäÖÃº¯Êý,Ö»Õë¶ÔGPIOA~GPIOK */
-void sys_gpio_af_set(GPIO_TypeDef *gpiox, uint16_t pinx, uint8_t afx);          /* GPIO¸´ÓÃ¹¦ÄÜÑ¡ÔñÉèÖÃ  */
-void sys_gpio_set(GPIO_TypeDef *p_gpiox, uint16_t pinx, uint32_t mode, 
-                  uint32_t otype, uint32_t ospeed, uint32_t pupd);              /*  GPIOÍ¨ÓÃÉèÖÃ */
-
-void sys_gpio_pin_set(GPIO_TypeDef *p_gpiox, uint16_t pinx, uint8_t status);    /* ÉèÖÃGPIOÄ³¸öÒý½ÅµÄÊä³ö×´Ì¬ */
-uint8_t sys_gpio_pin_get(GPIO_TypeDef *p_gpiox, uint16_t pinx);                 /* ¶ÁÈ¡GPIOÄ³¸öÒý½ÅµÄ×´Ì¬ */
-void sys_standby(void);         /* ½øÈë´ý»úÄ£Ê½ */
-void sys_soft_reset(void);      /* ÏµÍ³Èí¸´Î» */
-
-uint8_t sys_clock_set(uint32_t plln, uint32_t pllm, uint32_t pllp, uint32_t pllq);      /* Ê±ÖÓÉèÖÃº¯Êý */
-void sys_stm32_clock_init(uint32_t plln, uint32_t pllm, uint32_t pllp, uint32_t pllq);  /* ÏµÍ³Ê±ÖÓ³õÊ¼»¯º¯Êý */
-void sys_qspi_enable_memmapmode(uint8_t ftype); /* QSPI½øÈëÄÚ´æÓ³ÉäÄ£Ê½ */
-
-/* ÒÔÏÂÎª»ã±àº¯Êý */
-void sys_wfi_set(void);             /* Ö´ÐÐWFIÖ¸Áî */
-void sys_intx_disable(void);        /* ¹Ø±ÕËùÓÐÖÐ¶Ï */
-void sys_intx_enable(void);         /* ¿ªÆôËùÓÐÖÐ¶Ï */
-void sys_msr_msp(uint32_t addr);    /* ÉèÖÃÕ»¶¥µØÖ· */
+void sys_wfi_set(void);
+void sys_intx_disable(void);
+void sys_intx_enable(void);
+void sys_msr_msp(uint32_t addr);
 
 #endif
-
-
-
-
-
-
-
-
-
-
-

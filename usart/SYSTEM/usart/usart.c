@@ -1,10 +1,5 @@
 #include "./sys/sys.h"
 #include "./usart/usart.h"
-#include "stm32f4xx.h"
-#include "misc.h"
-#include "stm32f4xx_gpio.h"
-#include "stm32f4xx_usart.h"
-#include "stm32f4xx_rcc.h"
 #include "./GY39/gy39.h"
 
 /* 如果使用os,则包括下面的头文件即可. */
@@ -211,7 +206,7 @@ void usart2_init(uint32_t BaudRate)//PA2,PA3
 
 void USART2_IRQHandler(void)
 {
-	uint8_t data;
+	u8 data;
 	if(USART_GetITStatus(USART2, USART_IT_RXNE) == SET)//由来数据引发中断
 	{
 		data = USART_ReceiveData(USART2);//读取接收到的数据

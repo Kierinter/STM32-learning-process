@@ -58,10 +58,10 @@ led_flow/.vscode
 led_flow/.vscode/*
 key_switch/.vscode
 key_switch/.vscode/*
-
-# killkeil.bat
-
-killkeil.bat
+gy39/.vscode
+gy39/.vscode/*
+usart/.vscode
+usart/.vscode/*
 
 
 

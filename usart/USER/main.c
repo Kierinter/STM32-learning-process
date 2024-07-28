@@ -15,11 +15,10 @@ int main(void)
     get_gy39_data(gy39_data);
     int key = 0;
 
-    LED_Init();
-    BEEP_Init();
-    KEY_Init();
-    exit_init();
-    gy39_Init();
+    led_init();
+    beep_init();
+    key_init();
+    gy39_init();
     usart_init(84, 9600);
     delay_ms(10);
     LED0(0);
@@ -44,5 +43,4 @@ int main(void)
             key = 0;
         }
     }
-    return 0;
 }

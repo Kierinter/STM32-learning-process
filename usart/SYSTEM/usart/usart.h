@@ -1,5 +1,3 @@
-
-
 #ifndef __USART_H
 #define __USART_H
 
@@ -37,7 +35,9 @@ extern uint8_t  g_usart_rx_buf[USART_REC_LEN];      /* USART receive buffer, wit
 extern uint16_t g_usart_rx_sta;                     /* USART receive status */
 
 void usart_init(uint32_t sclk, uint32_t baudrate);  /* Initialize USART with specified system clock and baud rate */
+void usart2_init(uint32_t BaudRate);                /* Initialize USART2 with specified baud rate */
 void USART_SendDatas(USART_TypeDef * USARTx,uint8_t *buf, uint8_t len);
+
 #endif
 
 

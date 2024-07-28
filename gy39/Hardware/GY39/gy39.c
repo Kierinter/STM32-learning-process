@@ -72,7 +72,7 @@ void get_gy39_data(unsigned int data[])
 		data[3] = recvbuf[10] << 8 | recvbuf[11];
 		data[3] = data[3] / 100;
 		data[4] = recvbuf[12] << 8 | recvbuf[13];
-		printf("WD is %d, SD is %d, QY is %d, HB is %d\r\n", data[1], data[3], data[2], data[4]);
+		printf("Temperature is %d, Humidity is %d, Air Pressure is %d, Altitude is %d\r\n", data[1], data[3], data[2], data[4]);
 	}
 
 	recv_ok = 0;

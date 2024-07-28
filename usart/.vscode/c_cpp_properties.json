@@ -8,6 +8,7 @@
                 "d:\\keliProject\\experience\\STM32-learning-process\\usart\\FWLIB\\src",
                 "d:\\keliProject\\experience\\STM32-learning-process\\usart\\SYSTEM",
                 "d:\\keliProject\\experience\\STM32-learning-process\\usart\\Hardware",
+                "d:\\keliProject\\experience\\STM32-learning-process\\usart\\USER",
                 "C:\\Keil_v5\\ARM\\ARMCC\\include",
                 "C:\\Keil_v5\\ARM\\ARMCC\\include\\rw",
                 "d:\\keliProject\\experience\\STM32-learning-process\\usart\\SYSTEM\\delay",
@@ -17,8 +18,7 @@
                 "d:\\keliProject\\experience\\STM32-learning-process\\usart\\Hardware\\EXIT",
                 "d:\\keliProject\\experience\\STM32-learning-process\\usart\\Hardware\\GY39",
                 "d:\\keliProject\\experience\\STM32-learning-process\\usart\\Hardware\\KEY",
-                "d:\\keliProject\\experience\\STM32-learning-process\\usart\\Hardware\\LED",
-                "d:\\keliProject\\experience\\STM32-learning-process\\usart\\USER"
+                "d:\\keliProject\\experience\\STM32-learning-process\\usart\\Hardware\\LED"
             ],
             "defines": [
                 "STM32F40_41xxx",
