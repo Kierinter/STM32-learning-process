@@ -1,114 +1,0 @@
-Dependencies for Project 'key_switch', Target 'Target 1': (DO NOT MODIFY !)
-CompilerVersion: 6190000::V6.19::ARMCLANG
-F (.\HARDWARE\KEY\key.c)(0x668DEF06)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O0 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ./SYSTEM/usart -I ./SYSTEM/sys -I ./SYSTEM/delay -I ./Libraries/CMSIS/Device/ST/STM32F4xx/Include -I ./HARDWARE -I ./Libraries/CMSIS/Include-IC:/Keil_v5/ARM/PACK/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include-D__UVISION_VERSION="538" -DSTM32F407xx -DSTM32F407xx-o ./objects/key.o -MD)
-I (HARDWARE\KEY\key.h)(0x668DD7C5)
-I (SYSTEM\sys\sys.h)(0x668B3552)
-I (Libraries\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x665054DE)
-I (Libraries\CMSIS\Device\ST\STM32F4xx\Include\stm32f407xx.h)(0x668B38A2)
-I (Libraries\CMSIS\Include\core_cm4.h)(0x665054DE)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x637AECBC)
-I (Libraries\CMSIS\Include\cmsis_version.h)(0x665054DE)
-I (Libraries\CMSIS\Include\cmsis_compiler.h)(0x665054DE)
-I (Libraries\CMSIS\Include\cmsis_armclang.h)(0x665054DE)
-I (C:\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x6306C9C0)
-I (C:\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x637AECB8)
-I (Libraries\CMSIS\Include\mpu_armv7.h)(0x665054DE)
-I (Libraries\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x665054DE)
-I (SYSTEM\delay\delay.h)(0x668BE704)
-F (.\HARDWARE\KEY\key.h)(0x668DD7C5)()
-F (.\HARDWARE\LED\led.c)(0x668B55AE)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O0 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ./SYSTEM/usart -I ./SYSTEM/sys -I ./SYSTEM/delay -I ./Libraries/CMSIS/Device/ST/STM32F4xx/Include -I ./HARDWARE -I ./Libraries/CMSIS/Include-IC:/Keil_v5/ARM/PACK/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include-D__UVISION_VERSION="538" -DSTM32F407xx -DSTM32F407xx-o ./objects/led.o -MD)
-I (HARDWARE\.\LED\led.h)(0x668BE6D0)
-I (SYSTEM\sys\sys.h)(0x668B3552)
-I (Libraries\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x665054DE)
-I (Libraries\CMSIS\Device\ST\STM32F4xx\Include\stm32f407xx.h)(0x668B38A2)
-I (Libraries\CMSIS\Include\core_cm4.h)(0x665054DE)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x637AECBC)
-I (Libraries\CMSIS\Include\cmsis_version.h)(0x665054DE)
-I (Libraries\CMSIS\Include\cmsis_compiler.h)(0x665054DE)
-I (Libraries\CMSIS\Include\cmsis_armclang.h)(0x665054DE)
-I (C:\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x6306C9C0)
-I (C:\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x637AECB8)
-I (Libraries\CMSIS\Include\mpu_armv7.h)(0x665054DE)
-I (Libraries\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x665054DE)
-F (.\HARDWARE\LED\led.h)(0x668BE6D0)()
-F (.\HARDWARE\BEEP\beep.c)(0x668D4CAD)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O0 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ./SYSTEM/usart -I ./SYSTEM/sys -I ./SYSTEM/delay -I ./Libraries/CMSIS/Device/ST/STM32F4xx/Include -I ./HARDWARE -I ./Libraries/CMSIS/Include-IC:/Keil_v5/ARM/PACK/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include-D__UVISION_VERSION="538" -DSTM32F407xx -DSTM32F407xx-o ./objects/beep.o -MD)
-I (HARDWARE\BEEP\beep.h)(0x668DDAB0)
-I (SYSTEM\sys\sys.h)(0x668B3552)
-I (Libraries\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x665054DE)
-I (Libraries\CMSIS\Device\ST\STM32F4xx\Include\stm32f407xx.h)(0x668B38A2)
-I (Libraries\CMSIS\Include\core_cm4.h)(0x665054DE)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x637AECBC)
-I (Libraries\CMSIS\Include\cmsis_version.h)(0x665054DE)
-I (Libraries\CMSIS\Include\cmsis_compiler.h)(0x665054DE)
-I (Libraries\CMSIS\Include\cmsis_armclang.h)(0x665054DE)
-I (C:\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x6306C9C0)
-I (C:\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x637AECB8)
-I (Libraries\CMSIS\Include\mpu_armv7.h)(0x665054DE)
-I (Libraries\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x665054DE)
-F (.\HARDWARE\BEEP\beep.h)(0x668DDAB0)()
-F (.\SYSTEM\usart\usart.c)(0x668BE624)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O0 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ./SYSTEM/usart -I ./SYSTEM/sys -I ./SYSTEM/delay -I ./Libraries/CMSIS/Device/ST/STM32F4xx/Include -I ./HARDWARE -I ./Libraries/CMSIS/Include-IC:/Keil_v5/ARM/PACK/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include-D__UVISION_VERSION="538" -DSTM32F407xx -DSTM32F407xx-o ./objects/usart.o -MD)
-I (SYSTEM\sys\sys.h)(0x668B3552)
-I (Libraries\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x665054DE)
-I (Libraries\CMSIS\Device\ST\STM32F4xx\Include\stm32f407xx.h)(0x668B38A2)
-I (Libraries\CMSIS\Include\core_cm4.h)(0x665054DE)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x637AECBC)
-I (Libraries\CMSIS\Include\cmsis_version.h)(0x665054DE)
-I (Libraries\CMSIS\Include\cmsis_compiler.h)(0x665054DE)
-I (Libraries\CMSIS\Include\cmsis_armclang.h)(0x665054DE)
-I (C:\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x6306C9C0)
-I (C:\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x637AECB8)
-I (Libraries\CMSIS\Include\mpu_armv7.h)(0x665054DE)
-I (Libraries\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x665054DE)
-I (SYSTEM\usart\usart.h)(0x668BE67F)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x637AECBC)
-F (.\SYSTEM\usart\usart.h)(0x668BE67F)()
-F (.\SYSTEM\sys\sys.c)(0x668DDD50)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O0 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ./SYSTEM/usart -I ./SYSTEM/sys -I ./SYSTEM/delay -I ./Libraries/CMSIS/Device/ST/STM32F4xx/Include -I ./HARDWARE -I ./Libraries/CMSIS/Include-IC:/Keil_v5/ARM/PACK/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include-D__UVISION_VERSION="538" -DSTM32F407xx -DSTM32F407xx-o ./objects/sys.o -MD)
-I (SYSTEM\sys\sys.h)(0x668B3552)
-I (Libraries\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x665054DE)
-I (Libraries\CMSIS\Device\ST\STM32F4xx\Include\stm32f407xx.h)(0x668B38A2)
-I (Libraries\CMSIS\Include\core_cm4.h)(0x665054DE)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x637AECBC)
-I (Libraries\CMSIS\Include\cmsis_version.h)(0x665054DE)
-I (Libraries\CMSIS\Include\cmsis_compiler.h)(0x665054DE)
-I (Libraries\CMSIS\Include\cmsis_armclang.h)(0x665054DE)
-I (C:\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x6306C9C0)
-I (C:\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x637AECB8)
-I (Libraries\CMSIS\Include\mpu_armv7.h)(0x665054DE)
-I (Libraries\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x665054DE)
-F (.\SYSTEM\sys\sys.h)(0x668B3552)()
-F (.\SYSTEM\delay\delay.c)(0x668BE60B)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O0 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ./SYSTEM/usart -I ./SYSTEM/sys -I ./SYSTEM/delay -I ./Libraries/CMSIS/Device/ST/STM32F4xx/Include -I ./HARDWARE -I ./Libraries/CMSIS/Include-IC:/Keil_v5/ARM/PACK/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include-D__UVISION_VERSION="538" -DSTM32F407xx -DSTM32F407xx-o ./objects/delay.o -MD)
-I (SYSTEM\sys\sys.h)(0x668B3552)
-I (Libraries\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x665054DE)
-I (Libraries\CMSIS\Device\ST\STM32F4xx\Include\stm32f407xx.h)(0x668B38A2)
-I (Libraries\CMSIS\Include\core_cm4.h)(0x665054DE)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x637AECBC)
-I (Libraries\CMSIS\Include\cmsis_version.h)(0x665054DE)
-I (Libraries\CMSIS\Include\cmsis_compiler.h)(0x665054DE)
-I (Libraries\CMSIS\Include\cmsis_armclang.h)(0x665054DE)
-I (C:\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x6306C9C0)
-I (C:\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x637AECB8)
-I (Libraries\CMSIS\Include\mpu_armv7.h)(0x665054DE)
-I (Libraries\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x665054DE)
-I (SYSTEM\delay\delay.h)(0x668BE704)
-F (.\SYSTEM\delay\delay.h)(0x668BE704)()
-F (.\Libraries\CMSIS\Device\ST\STM32F4xx\Source\Templates\arm\startup_stm32f407xx.s)(0x665054DE)(--target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -masm=auto  -Wa,armasm,--diag_suppress=A1950W -c-gdwarf-4 -Wa,armasm,--pd,"__EVAL SETA 1"-IC:/Keil_v5/ARM/PACK/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include-Wa,armasm,--pd,"__UVISION_VERSION SETA 538" -Wa,armasm,--pd,"STM32F407xx SETA 1"-o ./objects/startup_stm32f407xx.o)
-F (.\User\main.c)(0x668DEFB9)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O0 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ./SYSTEM/usart -I ./SYSTEM/sys -I ./SYSTEM/delay -I ./Libraries/CMSIS/Device/ST/STM32F4xx/Include -I ./HARDWARE -I ./Libraries/CMSIS/Include-IC:/Keil_v5/ARM/PACK/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include-D__UVISION_VERSION="538" -DSTM32F407xx -DSTM32F407xx-o ./objects/main.o -MD)
-I (HARDWARE\.\BEEP\beep.h)(0x668DDAB0)
-I (SYSTEM\sys\sys.h)(0x668B3552)
-I (Libraries\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x665054DE)
-I (Libraries\CMSIS\Device\ST\STM32F4xx\Include\stm32f407xx.h)(0x668B38A2)
-I (Libraries\CMSIS\Include\core_cm4.h)(0x665054DE)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x637AECBC)
-I (Libraries\CMSIS\Include\cmsis_version.h)(0x665054DE)
-I (Libraries\CMSIS\Include\cmsis_compiler.h)(0x665054DE)
-I (Libraries\CMSIS\Include\cmsis_armclang.h)(0x665054DE)
-I (C:\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x6306C9C0)
-I (C:\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x637AECB8)
-I (Libraries\CMSIS\Include\mpu_armv7.h)(0x665054DE)
-I (Libraries\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x665054DE)
-I (HARDWARE\.\KEY\key.h)(0x668DD7C5)
-I (HARDWARE\.\LED\led.h)(0x668BE6D0)
-I (HARDWARE\.\OLED\oled.h)(0x668DE938)
-I (SYSTEM\delay\delay.h)(0x668BE704)
-I (SYSTEM\usart\usart.h)(0x668BE67F)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x637AECBC)
